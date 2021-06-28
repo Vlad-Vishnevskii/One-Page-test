@@ -1,0 +1,31 @@
+.questionnaire {
+  padding-top: 100px;
+}
+
+.questionnaire form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questionnaire__personal-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.questionnaire label {
+  // display: none;
+  margin-right: -20px;
+}
+
+.questionnaire__field {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.questionnaire__field input {
+  width: 405px;
+  padding: 10px 5px;
+}
