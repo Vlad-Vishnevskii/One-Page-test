@@ -15,17 +15,32 @@
   align-items: center;
 }
 
-.questionnaire label {
-  // display: none;
-  margin-right: -20px;
-}
-
 .questionnaire__field {
+  position: relative;
   margin-bottom: 20px;
   width: 100%;
 }
 
+.questionnaire__personal-data label {
+  position: absolute;
+  display: none;  
+  font-size: 12px;  
+  z-index: 5;
+}
+
 .questionnaire__field input {
   width: 405px;
-  padding: 10px 5px;
+  padding: 10px 5px; 
 }
+
+ input:focus + label {  
+  display: block;
+}
+
+.questionnaire__experience {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 300px;
+}
+
